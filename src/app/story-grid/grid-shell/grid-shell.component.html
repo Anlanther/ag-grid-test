@@ -1,6 +1,7 @@
-<p>grid-shell works!</p>
-<app-pure-grid-shell
-  [rowData]="(rowData$ | async) ?? []"
-  [colDefs]="(colDefs$ | async) ?? []"
-  [gridOptions]="gridOptions"
-></app-pure-grid-shell>
+<div class="ag-theme-quartz">
+  <app-pure-grid-shell
+    [rowData]="(rowData$ | async) ?? []"
+    [colDefs]="(colDefs$ | async) ?? []"
+    [gridOptions]="gridOptions"
+  ></app-pure-grid-shell>
+</div>
