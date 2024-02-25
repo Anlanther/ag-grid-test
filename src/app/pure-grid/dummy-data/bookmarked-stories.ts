@@ -1,4 +1,4 @@
-import { BookmarkedStory } from '../../models/story.model';
+import { BookmarkedStory } from '../../story-grid/models/story.model';
 
 export const BOOKMARKED_STORIES: BookmarkedStory[] = [
   {

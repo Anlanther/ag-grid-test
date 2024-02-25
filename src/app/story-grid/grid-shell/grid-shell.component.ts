@@ -3,18 +3,18 @@ import { Component, inject } from '@angular/core';
 import { ColDef, ColGroupDef, GridOptions } from 'ag-grid-community';
 import { Observable } from 'rxjs';
 import { BookmarkedStory } from '../models/story.model';
-import { PureGridComponent } from '../pure-grid/pure-grid.component';
+import { PureGridShellComponent } from '../pure-grid-shell/pure-grid-shell.component';
 import { GridStateService } from '../services/grid-state.service';
 
 @Component({
   selector: 'app-grid-shell',
   standalone: true,
-  imports: [CommonModule, PureGridComponent],
+  imports: [CommonModule, PureGridShellComponent],
   templateUrl: './grid-shell.component.html',
   styleUrl: './grid-shell.component.scss',
 })
 export class GridShellComponent {
-  columns$: Observable<(ColDef | ColGroupDef)[]>;
+  colDefs$: Observable<(ColDef | ColGroupDef)[]>;
   rowData$: Observable<BookmarkedStory[]>;
 
   gridOptions: GridOptions = {};
@@ -22,7 +22,7 @@ export class GridShellComponent {
   private gridStateService = inject(GridStateService);
 
   constructor() {
-    this.columns$ = this.gridStateService.getColDefs();
+    this.colDefs$ = this.gridStateService.getColDefs();
     this.rowData$ = this.gridStateService.getRows();
   }
 }

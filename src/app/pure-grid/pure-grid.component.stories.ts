@@ -2,7 +2,7 @@ import { StoryObj, argsToTemplate, type Meta } from '@storybook/angular';
 import { PureGridComponent } from './pure-grid.component';
 
 const meta: Meta<PureGridComponent> = {
-  title: 'Grid Component',
+  title: 'Pure Grid Component',
   component: PureGridComponent,
   tags: ['autodocs'],
   decorators: [

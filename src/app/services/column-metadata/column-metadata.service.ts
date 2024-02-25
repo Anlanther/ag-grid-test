@@ -10,7 +10,7 @@ export class ColumnMetadataService {
   getForKeys(keys: string[]): Observable<ColumnMetadata[]> {
     const metadata = COLUMNS.filter((col) => keys.includes(col.key));
     const metadataMissing = keys.filter(
-      (key) => !COLUMNS.some((col) => key.includes(col.name))
+      (key) => !COLUMNS.some((col) => key.includes(col.key))
     );
 
     if (metadataMissing.length > 0) {

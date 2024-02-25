@@ -2,9 +2,9 @@ import { Injectable, inject } from '@angular/core';
 import { ComponentStore } from '@ngrx/component-store';
 import { ColDef, ColGroupDef } from 'ag-grid-community';
 import { Observable, of, switchMap } from 'rxjs';
+import { BOOKMARKED_STORIES } from '../../pure-grid/dummy-data/bookmarked-stories';
 import { ColdefGeneratorService } from '../../services/coldef-generator/coldef-generator.service';
 import { BookmarkedStory } from '../models/story.model';
-import { BOOKMARKED_STORIES } from '../pure-grid/dummy-data/bookmarked-stories';
 import { GridColumnState } from './models/grid-column-state.model';
 import { DEFAULT_STATE, GridState } from './models/grid-state.model';
 @Injectable({

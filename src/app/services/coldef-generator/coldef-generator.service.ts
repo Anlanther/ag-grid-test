@@ -4,7 +4,7 @@ import { Observable, map } from 'rxjs';
 import {
   Column,
   GridColumnState,
-} from '../../grid/services/models/grid-column-state.model';
+} from '../../story-grid/services/models/grid-column-state.model';
 import { ColumnMetadataService } from '../column-metadata/column-metadata.service';
 import { ColumnMetadata } from '../column-metadata/models/column-metadata.model';
 import { GlobalColumnFormatterService } from '../global-column-formatter/global-column-fromatter.service';

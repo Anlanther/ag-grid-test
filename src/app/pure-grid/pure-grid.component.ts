@@ -8,7 +8,7 @@ import {
   GridOptions,
   GridReadyEvent,
 } from 'ag-grid-community';
-import { BookmarkedStory } from '../models/story.model';
+import { BookmarkedStory } from '../story-grid/models/story.model';
 @Component({
   selector: 'app-pure-grid',
   standalone: true,
