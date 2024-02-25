@@ -3,5 +3,6 @@
   style="height: 500px"
   [rowData]="rowData"
   [columnDefs]="colDefs"
+  (gridReady)="onGridReady($event)"
 >
 </ag-grid-angular>
