@@ -2,8 +2,8 @@ export type GridColumnState = ColumnGroup | Column;
 
 export interface ColumnGroup {
   type: 'header';
-  metadataKey: string;
-  overrideName?: string;
+  displayName: string;
+  children: Column[];
 }
 
 export interface Column {
