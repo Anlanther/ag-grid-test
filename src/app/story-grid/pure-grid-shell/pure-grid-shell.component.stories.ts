@@ -16,7 +16,7 @@ const meta: Meta<PureGridShellComponent> = {
     componentWrapperDecorator(
       (story) => {
         return `
-      @if (myTheme === 'dark'){
+      @if (myTheme === 'dark') {
         <div class="ag-theme-quartz-dark">
           ${story}
         </div>
@@ -39,5 +39,6 @@ export const Default: Story = {
   args: {
     colDefs: convertToColDefForStorybook(DEFAULT_STATE.columns),
     rowData: BOOKMARKED_STORIES,
+    gridOptions: {},
   },
 };

@@ -14,7 +14,7 @@ const meta: Meta<PureGridComponent> = {
     componentWrapperDecorator(
       (story) => {
         return `
-        @if (myTheme === 'dark'){
+        @if (myTheme === 'dark') {
           <div class="ag-theme-quartz-dark">
             ${story}
           </div>
