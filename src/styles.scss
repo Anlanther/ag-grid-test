@@ -4,3 +4,11 @@
 @import "ag-grid-community/styles/ag-grid.css";
 /* Quartz Theme Specific CSS */
 @import "ag-grid-community/styles/ag-theme-quartz.css";
+
+.ratio-pass {
+  background-color: rgb(141, 220, 141);
+}
+
+.ratio-fail {
+  background-color: rgb(221, 142, 142);
+}
