@@ -1,8 +1,9 @@
 import type { Preview } from '@storybook/angular';
+import { fn } from '@storybook/test';
 
 export const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
+    args: { onClick: fn() },
     controls: {
       matchers: {
         color: /(background|color)$/i,

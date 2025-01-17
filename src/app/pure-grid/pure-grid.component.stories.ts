@@ -28,7 +28,7 @@ const meta: Meta<PureGridComponent> = {
       ({ globals }) => ({ myTheme: globals['schema'] })
     ),
   ],
-  render: (args: PureGridComponent) => ({
+  render: (args) => ({
     props: { ...args },
     template: `<app-pure-grid ${argsToTemplate(args)}></app-pure-grid>`,
   }),
