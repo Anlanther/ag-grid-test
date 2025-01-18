@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+/* Core Grid CSS */
+/* Quartz Theme Specific CSS */
+.ratio-pass {
+  background-color: rgb(141, 220, 141);
+}
+
+.ratio-fail {
+  background-color: rgb(221, 142, 142);
+}
